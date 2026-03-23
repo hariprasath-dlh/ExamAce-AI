@@ -1,0 +1,151 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8fafc;
+}
+
+.main-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.layout-row {
+    flex-grow: 1;
+}
+
+.card {
+    border-radius: 16px;
+    background: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.04) !important;
+}
+
+textarea.form-control {
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+textarea.form-control:focus {
+    background-color: #ffffff !important;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+    border: none;
+    border-radius: 10px;
+    padding: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #2563eb 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.2) !important;
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+.output-box {
+    background-color: #ffffff;
+    border-color: #e2e8f0 !important;
+    min-height: 400px;
+    color: #334155;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+/* Markdown Content Styling */
+.output-box h1, .output-box h2, .output-box h3, .output-box h4 {
+    color: #0f172a;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.output-box h1 { 
+    font-size: 1.75rem; 
+    color: #1e3a8a;
+}
+
+.output-box h2 { 
+    font-size: 1.4rem; 
+    border-bottom: 2px solid #e2e8f0; 
+    padding-bottom: 8px; 
+    color: #2563eb;
+}
+
+.output-box h3 { 
+    font-size: 1.2rem; 
+}
+
+.output-box p {
+    margin-bottom: 1.2rem;
+}
+
+.output-box ul, .output-box ol {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.output-box li {
+    margin-bottom: 0.5rem;
+}
+
+.output-box li::marker {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+.output-box strong {
+    color: #0f172a;
+    font-weight: 600;
+    background-color: rgba(59, 130, 246, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.output-box blockquote {
+    border-left: 4px solid #3b82f6;
+    padding-left: 1rem;
+    color: #475569;
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 1.5rem;
+}
+
+/* Custom Scrollbar for Textarea & Output */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+/* Simple pulse animation for loading */
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .5; }
+}
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
