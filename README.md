@@ -70,10 +70,10 @@ ExamAce-AI/
 │── .env
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 ├── static/
-│ └── style.css
+│   └── style.css
 ```
 
 ---
@@ -84,54 +84,93 @@ ExamAce-AI/
 ```bash
 git clone https://github.com/your-username/examace-ai.git
 cd examace-ai
-2. Create Virtual Environment (optional)
+```
+
+### 2. Create Virtual Environment (optional)
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
-3. Install Dependencies
+```
+
+### 3. Install Dependencies
+```bash
 pip install -r requirements.txt
-4. Add API Key
+```
 
-Create a .env file and add:
+### 4. Add API Key
+Create a `.env` file and add:
 
+```env
 OPENAI_API_KEY=your_api_key_here
+```
 
 or
 
+```env
 GEMINI_API_KEY=your_api_key_here
-5. Run the Application
+```
+
+### 5. Run the Application
+```bash
 python app.py
-6. Open in Browser
+```
+
+### 6. Open in Browser
+```
 http://127.0.0.1:5000
-🧪 Sample Input & Output
-🔹 Input
-Answer: “Generative AI is a type of AI that creates content…”
-Marks: 5
-🔹 Output
-Short structured answer
-Key points
-Important keywords
-Summary
-🔹 Input
-Same answer
-Marks: 16
-🔹 Output
-Detailed explanation
-Headings & subheadings
-Expanded content
-Keywords + summary
-📈 Future Enhancements
-📄 PDF upload & summarization
-🎙️ Voice input support
-📊 Answer evaluation & scoring
-🌐 Multi-language support
-💼 Resume Value
+```
+
+---
+
+## 🧪 Sample Input & Output
+
+### 🔹 Input
+- Answer: *“Generative AI is a type of AI that creates content…”*  
+- Marks: **5**
+
+### 🔹 Output
+- Short structured answer  
+- Key points  
+- Important keywords  
+- Summary  
+
+---
+
+### 🔹 Input
+- Same answer  
+- Marks: **16**
+
+### 🔹 Output
+- Detailed explanation  
+- Headings & subheadings  
+- Expanded content  
+- Keywords + summary  
+
+---
+
+## 📈 Future Enhancements
+
+- 📄 PDF upload & summarization  
+- 🎙️ Voice input support  
+- 📊 Answer evaluation & scoring  
+- 🌐 Multi-language support  
+
+---
+
+## 💼 Resume Value
 
 This project demonstrates:
+- Practical use of **Generative AI (NLP & NLG)**  
+- Ability to build **real-world AI applications**  
+- Understanding of **prompt engineering**  
+- Full-stack development skills  
 
-Practical use of Generative AI (NLP & NLG)
-Ability to build real-world AI applications
-Understanding of prompt engineering
-Full-stack development skills
-🤝 Contributing
+---
 
+## 🤝 Contributing
 Contributions are welcome! Feel free to fork this repo and improve the project.
+
+---
+
+## ⭐ Support
+If you like this project, don’t forget to ⭐ the repository!
